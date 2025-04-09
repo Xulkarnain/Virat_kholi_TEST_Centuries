@@ -1,0 +1,52 @@
+# Ignore Python virtual environment
+penv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# Environment variables
+.env
+*.env
+
+# Logs and debugging files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Compiled C files
+*.so
+
+# Python egg and cache
+*.egg-info/
+.eggs/
+*.egg
+
+# Plotly temp files
+*.html
+*.png
+*.jpeg
+
+# Test and coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+.cache/
+
+# MyPy type checking cache
+.mypy_cache/
+
+# PyInstaller build
+build/
+dist/
+*.spec
