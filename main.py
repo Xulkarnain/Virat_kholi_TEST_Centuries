@@ -31,6 +31,7 @@ fig = px.bar(
 
 fig.show()
 
+fig.write_html("centuries_per_year.html")
 
 df.columns = df.columns.str.strip()       
 df['Against'] = df['Against'].str.strip() 
@@ -52,6 +53,8 @@ fig = px.bar(
 )
    
 fig.show()   
+
+fig.write_html("centuries_by_team.html")
 
 df.coulmns = df.columns.str.strip()
 df['H/A'] = df['H/A'].str.strip()
@@ -86,6 +89,8 @@ fig.update_layout(
 )
 
 fig.show()
+
+fig.write_html("centuries_HA.html")
 
 df['Result'] = df['Result'].replace(['Drawn', 'draw', 'tied', 'Tied'], 'Draw')
 
@@ -123,6 +128,8 @@ fig.update_traces(
 )
 fig.show()
 
+fig.write_html("centuries_result.html")
+
 df['Format'] = df['Format'].str.strip()
 
 format = df['Format'].value_counts()
@@ -155,3 +162,4 @@ fig.update_traces(
 )
 fig.show()
 
+fig.write_html("centuries_format.html")
