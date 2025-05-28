@@ -33,7 +33,6 @@ Thumbs.db
 
 # Plotly temp files
 *.html
-*.png
 *.jpeg
 
 # Test and coverage reports
